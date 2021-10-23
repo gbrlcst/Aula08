@@ -7,7 +7,7 @@ A main do seu programa deve conter a digitação do ano, a chamada da função e a e
 
 	 * */
 	public static String verificaAno(int ano) {
-		if((ano % 4 == 0 || ano % 100 != 0) && ano % 400 == 0) {
+		if((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
 			return "O ano informado é bissexto";
 		} else {
 			return "O ano informado não é bissexto";
